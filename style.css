@@ -178,7 +178,7 @@ main {
 #image-card {
   width: 100%;
   height: 12rem;
-  border-radius: 1.2rem;
+  border-top: 1.2rem;
 }
 
 .card-text {
@@ -215,4 +215,161 @@ main {
   display: flex;
   justify-content: right;
   align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* footer */
+
+footer {
+  margin-top: 4rem;
+  padding: 0 6rem;
+  margin-bottom: 2rem;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#contact p {
+  color: var(--Solid-Heading, #42446e);
+  font-family: "DM Sans";
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 740px) {
+  header#navbar {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .nav-list {
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .nav-list a {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  #banner {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+
+  .banner-content-title {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .banner-content-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .banner-image-container {
+    margin-top: 1rem;
+    max-width: 50%;
+  }
+
+  .banner-image {
+    max-width: 100%;
+  }
+
+  #name-stack-tech,
+  #name-projects-post {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  #tech-paragraph,
+  #projects-paragraph {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .images-tech {
+    margin-top: 1rem;
+  }
+
+  #image-tech {
+    width: 40px;
+    height: 40px;
+  }
+
+  .images-tech-part1,
+  .images-tech-part2 {
+    gap: 0.5rem;
+  }
+
+  .projects-card {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  #image-card {
+    width: 100%;
+    height: 8rem;
+  }
+
+  .card-text h2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .card-text p {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text img {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.3rem;
+  }
+
+  .card-text a {
+    font-size: 14px;
+  }
+
+  .link-code {
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-footer {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  #contact {
+    gap: 1.5rem;
+  }
+
+  #contact p {
+    font-size: 0.9rem;
+  }
 }
