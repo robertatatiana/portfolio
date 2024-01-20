@@ -23,5 +23,5 @@ Bem-vindo ao meu projeto de portfólio! Este projeto contém informações sobre
 
 - **Nome**: Roberta Maximino
 - **Email**: robertatatiana00@gmail.com
-- **LinkedIn**: []([https://www.linkedin.com/in/roberta-tatiana-2b76b1177/])
-- **GitHub**: [](https://github.com/robertatatiana)
+- **LinkedIn**: https://www.linkedin.com/in/roberta-tatiana-2b76b1177/
+- **GitHub**: https://github.com/robertatatiana
