@@ -115,7 +115,7 @@ main {
   );
   border: 10px solid transparent;
   border-radius: 50%;
-  max-width: 20rem; /* Ajuste conforme necessário */
+  max-width: 20rem;
 }
 
 #name-stack-tech,
@@ -250,6 +250,10 @@ footer {
 }
 
 @media only screen and (max-width: 740px) {
+  body {
+    padding: 0 2rem;
+  }
+
   header#navbar {
     flex-direction: column;
     text-align: center;
@@ -263,6 +267,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-left: 2rem;
   }
 
   .nav-list a {
@@ -323,28 +328,30 @@ footer {
   .projects-card {
     gap: 0.5rem;
     padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   #image-card {
     width: 100%;
-    height: 8rem;
+    height: auto;
   }
 
   .card-text h2 {
     font-size: 0.8rem;
-    margin-bottom: 0.5rem;
     text-align: center;
   }
 
-  .card-text p {
-    font-size: 0.5rem;
-    margin-bottom: 0.5rem;
+  .card-text p:nth-child(2) {
+    display: none; /* Isso oculta o segundo parágrafo dentro do .card-text */
   }
 
-  .card-text img {
-    width: 0.7rem;
-    height: 0.7rem;
-    margin-right: 0.3rem;
+  .card:nth-child(2) .card-text h2 {
+    margin-top: 1.3rem; /* Ajuste o valor conforme necessário */
   }
 
   .card-text a {
@@ -366,11 +373,15 @@ footer {
     flex-direction: column;
   }
 
+  .contact-footer nav a {
+    font-size: 1.2rem;
+  }
+
   #contact {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   #contact p {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
