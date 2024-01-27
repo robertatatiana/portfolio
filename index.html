@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Portfolio - Roberta Maximino</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,33 +23,37 @@
   </head>
   <body>
     <header id="navbar">
-      <nav>
-        <a class="nav-brand" href="#navbar">Roberta Maximino</a>
-      </nav>
-      <nav>
-        <a href="">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#navbar">Sobre mim</a></li>
-            <li class="nav-item"><a href="#stack-tech">Tecnologias</a></li>
-            <li class="nav-item"><a href="#projects">Projetos</a></li>
-            <li class="nav-item"><a href="#contact">Contato</a></li>
-            <li class="nav-item">
-              <a href="https://github.com/robertatatiana" target="_blank"
-                ><img src="img/Vector.svg" alt="Logo Github"
-              /></a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://www.linkedin.com/in/roberta-tatiana-2b76b1177/"
-                target="_blank"
-                ><img
-                  src="img/entypo-social_linkedin-with-circle.svg"
-                  alt="Logo Linkedin"
-              /></a>
-            </li>
-          </ul>
-        </a>
-      </nav>
+      <div class="item">
+        <nav id="">
+          <a class="nav-brand" href="#navbar">Roberta Maximino</a>
+        </nav>
+      </div>
+      <div class="item">
+        <nav>
+          <a href="">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#navbar">Sobre mim</a></li>
+              <li class="nav-item"><a href="#stack-tech">Tecnologias</a></li>
+              <li class="nav-item"><a href="#projects">Projetos</a></li>
+              <li class="nav-item"><a href="#contact">Contato</a></li>
+              <li class="nav-item">
+                <a href="https://github.com/robertatatiana" target="_blank"
+                  ><img src="img/Vector.svg" alt="Logo Github"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://www.linkedin.com/in/roberta-tatiana-2b76b1177/"
+                  target="_blank"
+                  ><img
+                    src="img/entypo-social_linkedin-with-circle.svg"
+                    alt="Logo Linkedin"
+                /></a>
+              </li>
+            </ul>
+          </a>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="banner">
@@ -148,12 +155,15 @@
               alt="Projeto Musica Api"
             />
             <div class="card-text">
-              <h2>Projeto de Portfolio</h2>
+              <h2>Projeto de Portfolio Web</h2>
               <p>
                 Portfólio web que consta infomações sobre mim, destaco minhas
                 habilidades em tecnologias e compartilho projetos realizados.
               </p>
-              <p>Tecnologias Utilizadas: HTML, CSS</p>
+              <p>
+                Tecnologias Utilizadas: HTML, CSS
+                <strong class="oculto">teste</strong>
+              </p>
               <div class="link-code">
                 <img src="img/akar-icons_github-fill.svg" alt="GitHub" />
                 <a

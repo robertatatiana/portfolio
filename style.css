@@ -43,11 +43,6 @@ header#navbar {
   gap: 2rem;
 }
 
-.nav-item {
-  text-decoration: none;
-  color: blue;
-}
-
 .nav-list a {
   text-decoration: none;
   color: #666;
@@ -249,30 +244,38 @@ footer {
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 940px) {
   body {
-    padding: 0 2rem;
+    overflow-x: hidden;
   }
 
   header#navbar {
     flex-direction: column;
     text-align: center;
     height: auto;
-    max-width: 100%;
   }
 
   .nav-list {
-    padding: 0 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    text-align: center;
     flex-direction: row;
-    margin-left: 2rem;
+    gap: 1.2rem;
+  }
+
+  .nav-list img {
+    width: 1.5rem;
+  }
+
+  .item {
+    flex: 1;
   }
 
   .nav-list a {
-    display: block;
-    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
     font-size: 0.8rem;
   }
 
@@ -327,18 +330,20 @@ footer {
 
   .projects-card {
     gap: 0.5rem;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     margin-top: 1rem;
   }
 
   .card {
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   #image-card {
     width: 100%;
-    height: auto;
+    height: 90px;
   }
 
   .card-text h2 {
@@ -350,16 +355,22 @@ footer {
     display: none; /* Isso oculta o segundo parágrafo dentro do .card-text */
   }
 
-  .card:nth-child(2) .card-text h2 {
+  /* .card:nth-child(2) .card-text h2 {
     margin-top: 1.3rem; /* Ajuste o valor conforme necessário */
-  }
-
-  .card-text a {
-    font-size: 14px;
-  }
+  /* } */
 
   .link-code {
     margin-top: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .link-code a {
+    font-size: 10px;
+  }
+
+  .oculto {
+    visibility: hidden;
   }
 
   footer {
@@ -382,6 +393,11 @@ footer {
   }
 
   #contact p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  #contact img {
+    width: 1.5rem;
+    height: auto;
   }
 }
